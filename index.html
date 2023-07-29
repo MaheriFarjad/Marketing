@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+
+        .nav {
+            display: inline-block;
+        }
+
+        .nav li {
+            display: inline-block;
+            padding-left: 20px;
+
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a.active {
+            background-color: white;
+            color: black;
+            padding: 4px 10px;
+        }
+
+        .icons i {
+            padding: 7px 12px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+
+
+        }
+
+        i:hover {
+            color: blue;
+        }
+
+        .home {
+            background: url(Screenshot_8.jpg) no-repeat center center;
+            background-size: cover;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .home h2 {
+            font-size: 4.8rem;
+            padding-bottom: 30px;
+            color: rgb(65, 65, 239);
+        }
+
+        .home p {
+            font-size: 1.8rem;
+            padding-bottom: 30px;
+            color: white;
+
+            font-weight: 333;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .btn {
+            background-color: #5758e0 !important;
+            padding: 13px 20px;
+            margin-right: 0.5rem;
+            cursor: pointer;
+            border: none;
+            color: white;
+        }
+
+        .services {
+            max-width: 1400px;
+            display: flex;
+            flex-wrap: wrap;
+            /* Add this property to wrap boxes to the next line */
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #111111;
+        }
+
+        /* Adjust the width of each box to fit three boxes in each row */
+        .box {
+            width: calc(30% - 90px);
+            /* Adjust the width based on your preference */
+            height: 150px;
+
+            padding: 20px;
+            margin: 20px 20px;
+            /* Adjust margin for spacing between boxes */
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: #191919;
+        }
+
+        .box:hover {
+            background-color: #4facfe;
+
+        }
+
+        .box h3 {
+            padding-bottom: 20px;
+            font-family: sans-serif;
+            text-align: center;
+
+        }
+
+        .box p {
+            padding-bottom: 20px;
+            font-family: sans-serif;
+
+            text-align: center;
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #191919;
+            padding: 50px;
+        }
+
+        .about img {
+            height: 400px;
+            width: 600px;
+        }
+
+        .about-text {
+            flex: 1;
+            color: white;
+            margin-left: 30px;
+        }
+
+        .about h3 {
+            padding-bottom: 20px;
+            font-family: sans-serif;
+            font-size: 2rem;
+        }
+
+        .about p {
+            font-size: 1rem;
+            font-family: sans-serif;
+            line-height: 1.4;
+        }
+
+        .straegy {
+            background-color: #111111;
+            width: 100%;
+            height: 550px;
+
+
+        }
+
+        .Agya {
+            color: white;
+            text-align: center;
+            padding-top: 30px;
+            font-size: 3.4rem;
+
+        }
+
+        .lala {
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 1.4rem;
+
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .portfolio img {
+            width: 400px;
+            padding: 15px;
+            margin-top: 60px;
+            margin-left: 10px;
+        }
+
+        .watch {
+            background-color: #191919;
+            width: 100%;
+            height: 500px;
+
+        }
+
+        .video {
+            margin-left: 30%;
+            margin-top: 2%;
+        }
+    .testimonials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    padding: 50px;
+    
+
+    }
+    .testimonial img {
+    width: 30x;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; 
+  }
+        .make {
+            background-color:#191919 ;
+            text-align: center;
+            color: white;
+            padding: 20px 0px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .araha {
+            padding-bottom: 20px;
+        }
+        .make:hover {
+            background-color: #4facfe;
+
+        }
+      
+       
+</style>
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>SolutionM4</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="$" class="active">About</a></li>
+                <li><a href="$">Features</a></li>
+                <li><a href="$">Pricing</a></li>
+                <li><a href="$">Contacts</a></li>
+                <li><a href="$">About</a></li>
+            </ul>
+
+        </div>
+        <div class="icons">
+            <a href="https://www.skype.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-skype fa-2x"></i></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-2x"></i></a>
+                <i class="fa fa-share fa-2x"></i>
+
+    </header>
+    <section class="home">
+        <div class="text">
+            <h2>MARKETING <br>SOLUTION AGENCY</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididuntbr ut
+                labore et dolore magna aliqua.
+            </p>
+            <button class="btn">Get Started</button>
+        </div>
+    </section>
+    <section class="services">
+        <div class="box">
+            <i class="fa fa-dollar-sign" style="padding-bottom: 10px;"></i>
+            <h3>Digital Marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, perferendis?</p>
+            <i class="fa fa-arrow-right"></i>
+
+
+        </div>
+        <div class="box">
+            <i class="fa fa-dollar-sign" style="padding-bottom: 10px;"></i>
+            <h3>Social Media Marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, perferendis?</p>
+            <i class="fa fa-arrow-right"></i>
+
+
+        </div>
+        <div class="box">
+            <i class="fa fa-dollar-sign" style="padding-bottom: 10px;"></i>
+            <h3>Search Engine Optimization</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, perferendis?</p>
+            <i class="fa fa-arrow-right"></i>
+
+
+        </div>
+        <div class="box">
+            <i class="fa fa-dollar-sign" style="padding-bottom: 10px;"></i>
+            <h3>Google Adwords </h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, perferendis?</p>
+            <i class="fa fa-arrow-right"></i>
+
+
+        </div>
+        <div class="box">
+            <i class="fa fa-dollar-sign" style="padding-bottom: 10px;"></i>
+            <h3>Social Media Marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, perferendis?</p>
+            <i class="fa fa-arrow-right"></i>
+
+
+        </div>
+        <div class="box">
+            <i class="fa fa-dollar-sign" style="padding-bottom: 10px;"></i>
+            <h3>Digital Marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, perferendis?</p>
+            <i class="fa fa-arrow-right"></i>
+
+
+        </div>
+
+    </section>
+    <section class="about">
+        <img src="03.jpg" alt="">
+        <div class="about-text">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Mauris finibus leo et diam fermentum <br>
+                ullamcorper. Nulla venenatis nibh sollicitudin tincidunt gravida. <br> Nam convallis justo et ligula
+                luctus
+                suscipit. Etiam eu nisi turpis. Donec sollicitudin accumsan quam, rhoncus sagittis metus semper quis.
+                Praesent convallis mauris sed ipsum lobortis facilisis. <br> Nulla cursus sem non nunc sagittis, a
+                volutpat
+                mauris lobortis.<br> Nulla ut feugiat tellus. Nam dictum nisi nec scelerisque auctor
+            </p>
+
+        </div>
+    </section>
+    <section class="straegy">
+        <div class="portfolio">
+            <h3 class="Agya">Our Portfolio</h3>
+            <p class="lala">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laboriosam!</p>
+
+
+            <img src="Screenshot_1.jpg" alt="">
+
+            <img src="Screenshot_1.jpg" alt="">
+
+            <img src="Screenshot_1.jpg" alt="">
+
+        </div>
+
+    </section>
+    <section class="watch">
+        <h3 class="Agya">Watch the Video
+        </h3>
+        <p class="lala">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laboriosam!</p>
+
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/oHIztbY3XvQ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+    </section>
+    <section class="testimonials">
+        
+       <div class="make">
+        
+        <div class="testimonial">
+            <img src="farjad.jpg" alt="">
+            <h3 class="araha">Digital Marketing</h3>
+            <p class="araha">Lorem ipsum dolor sit amet consectetur, <br>elit. Tempora, perferendis?</p>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+
+
+        </div>
+       
+    
+      
+       </div>
+       <div class="make">
+        <div class="testimonial">
+            <img src="farjad.jpg" alt="">
+            <h3 class="araha">Digital Marketing</h3>
+            <p class="araha">Lorem ipsum dolor sit amet consectetur, <br>elit. Tempora, perferendis?</p>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+
+
+        </div>
+       
+    
+      
+       </div>
+       <div class="make">
+        <div class="testimonial">
+            <img src="farjad.jpg" alt="">
+            <h3 class="araha">Digital Marketing</h3>
+            <p class="araha">Lorem ipsum dolor sit amet consectetur, <br>elit. Tempora, perferendis?</p>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+
+
+        </div>
+       
+    
+      
+       </div>
+       <div class="make">
+        <div class="testimonial">
+            <img src="farjad.jpg" alt="">
+            <h3 class="araha">Digital Marketing</h3>
+            <p class="araha">Lorem ipsum dolor sit amet consectetur, <br>elit. Tempora, perferendis?</p>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+
+
+        </div>
+       
+    
+      
+       </div>
+
+     </div>
+   
+</body>
+
+</html>
